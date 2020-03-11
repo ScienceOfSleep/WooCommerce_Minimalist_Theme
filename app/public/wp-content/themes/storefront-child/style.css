@@ -1,0 +1,78 @@
+/*
+Theme Name: Storefront Child
+Theme URI: http://shop.drawitpaint.com/storefront-child/
+description: >-
+  Storefront Theme
+Author: Josh Steele
+Author URI: http://jjsteele.ca
+Template: storefront
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain: storefront-child
+*/
+
+/*Sidebar removed, filling empty space*/
+body.woocommerce #primary { width: 100%; }
+
+.single-product .x-comment-img .avatar{
+    display: none;
+}
+.single-product #reviews article.comment {
+    margin-left: 0;
+}
+
+/*COLOR Overrides*/
+/*stars*/
+.product .star-rating span:before,
+.product .star-rating:before {
+    color: #dd4c1b;
+}
+.storefront-sticky-add-to-cart .star-rating span:before,
+.storefront-sticky-add-to-cart .star-rating:before {
+    color: #dd4c1b;
+}
+
+/*buttons*/
+.woocommerce #content input.button, .woocommerce #respond input#submit,
+.woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
+.woocommerce-page #content input.button, .woocommerce-page #respond input#submit,
+.woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button{
+    background-color: #dd4c1b !important;
+    color: #ffffff !important;
+}
+
+.woocommerce #content input.button.alt:hover, .woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover, .woocommerce-page #content input.button.alt:hover,
+.woocommerce-page #respond input#submit.alt:hover, .woocommerce-page a.button.alt:hover,
+.woocommerce-page button.button.alt:hover, .woocommerce-page input.button.alt:hover{
+    background-color: #417fb9 !important;
+}
+
+/*links*/
+a{
+    color: #dd4c1b;
+}
+a:focus{
+    outline-color: #417fb9;
+}
+
+li.current-menu-item > a{
+    color: #dd4c1b !important;
+}
+
+/*Sorting function*/
+.woocommerce-ordering, .woocommerce-result-count {
+    display: none;
+}
+
+/*Secondary widget*/
+div#secondary {
+    display: none;
+}
+
+.site-branding{
+    display: none !important;
+}
